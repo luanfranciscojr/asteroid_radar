@@ -125,7 +125,6 @@ The application you will build must:
 
 To build this project you are going to use the NASA NeoWS (Near Earth Object Web Service) API, which you can find here.
 https://api.nasa.gov/
-
 You will need an API Key which is provided for you in that same link, just fill the fields in the form and click Signup.
 You should put ApiKey in constant Class
 

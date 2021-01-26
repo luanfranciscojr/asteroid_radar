@@ -20,7 +20,7 @@ import java.util.*
 class AsteroidRepository(private val database: AsteroidDatabase) {
 
     val pictureOfDay: LiveData<PictureOfDay> = Transformations.map(database.pictureOfDayDao.getPictureOfDay()) {
-        it.asDomainModel()
+        it?.asDomainModel()
     }
 
     fun getAsteroids(asteroidFilter: AsteroidFilter) =  when (asteroidFilter) {
